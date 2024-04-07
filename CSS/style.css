@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.poppins-extralight {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+* {
+	font-size: 15px;
+}
+
+.containerSec {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title,
+.tech {
+	display: flex;
+	flex-direction: column;
+	font-size: 2em;
+	align-items: center;
+}
+
+.tech {
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.ai,
+.cardDesc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1em;
+	color: hsl(229, 6%, 66%);
+}
+
+.cardTitle {
+	font-size: 2em;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
