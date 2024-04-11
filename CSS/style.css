@@ -1,69 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
-.poppins-extralight {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 200;
-	font-style: normal;
-}
+@import url('https://fonts.google.com/specimen/Poppins');
 
 * {
-	font-size: 15px;
-}
-
-.containerSec {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/* background-color: hsl(212, 86%, 64%); */
-}
-
-.superBox,
-.teamBox,
-.karmaBox,
-.calcBox {
-	border-radius: 5px;
+	border: 0;
+	padding: 0;
 	box-sizing: border-box;
-	background-color: grey;
-	color: hsl(0, 0%, 98%);
 }
 
-.superGlass,
-.karBlub,
-.TbHouse2,
-.calCalc {
+body {
+	width: 80%;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
-h1 {
-	font-size: 2em;
-	font-weight: 200;
-}
-
-.tech,
-.cardTitle {
-	font-size: 2em;
-	font-weight: 700;
-}
-
-.ai,
-.cardDesc {
-	display: flex;
-	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	font-size: 1em;
+	margin: auto;
+	font-size: 15px;
+	font-family: poppins, sans-serif;
+	background: hsl(0, 0%, 98%);
+}
+
+p {
 	color: hsl(229, 6%, 66%);
 }
 
-.cardTitle {
-	font-size: 2em;
+header {
+	white-space: nowrap;
 }
 
-.container img {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+.containerSec {
+	text-align: center;
+}
+
+.containerSec h1 {
+	font-size: 2rem;
+	font-weight: 200;
+	color: hsl(229, 6%, 66%);
+}
+
+.containerSec h2 {
+	margin-top: -20px;
+	font-size: 2rem;
+	color: hsl(234, 12%, 34%);
+}
+
+.containerSec p {
+	font-size: 1.2rem;
+	white-space: pre-wrap;
+	text-align: center;
+}
+
+.col {
+	position: relative;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 18px auto;
+	height: 200px;
+	padding: 20px;
+	width: 350px;
+	box-shadow:
+		0 10px 20px rgba(0, 0, 0, 0.05),
+		0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col img {
+	position: absolute;
+	padding: 15px;
+	right: 0;
+	bottom: 0;
+}
+
+.col h3 {
+	font-size: 1.3rem;
+	color: hsl(234, 12%, 34%);
+}
+
+.col::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.col-red::after {
+	background-color: hsl(0, 78%, 62%);
+}
+
+.col-cyan::after {
+	background-color: hsl(180, 62%, 55%);
+}
+
+.col-orange::after {
+	background-color: hsl(34, 97%, 64%);
+}
+
+.col-blue::after {
+	background-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+	.superGlassSet {
+		display: flex;
+		align-items: center;
+	}
+	.col {
+		margin: 18px;
+	}
 }
 
 .attribution {
