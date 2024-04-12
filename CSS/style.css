@@ -25,24 +25,24 @@ header {
 	white-space: nowrap;
 }
 
-.containerSec {
+.topContainer {
 	text-align: center;
 }
 
-.containerSec h1 {
+.topContainer h1 {
 	font-size: 2rem;
 	font-weight: 200;
 	color: hsl(229, 6%, 66%);
 }
 
-.containerSec h2 {
+.topContainer h2 {
 	margin-top: -20px;
 	font-size: 2rem;
 	color: hsl(234, 12%, 34%);
 }
 
-.containerSec p {
-	font-size: 1.2rem;
+.topContainer p {
+	font-size: 1rem;
 	white-space: pre-wrap;
 	text-align: center;
 }
@@ -53,9 +53,9 @@ header {
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 18px auto;
-	height: 200px;
+	height: 300px;
 	padding: 20px;
-	width: 350px;
+	width: 400px;
 	box-shadow:
 		0 10px 20px rgba(0, 0, 0, 0.05),
 		0 6px 6px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ header {
 
 .col img {
 	position: absolute;
-	padding: 15px;
+	padding: 5px;
 	right: 0;
 	bottom: 0;
 }
@@ -82,27 +82,28 @@ header {
 	left: 0;
 }
 
-.col-red::after {
+.colRed::after {
 	background-color: hsl(0, 78%, 62%);
 }
 
-.col-cyan::after {
+.colCyan::after {
 	background-color: hsl(180, 62%, 55%);
 }
 
-.col-orange::after {
+.colOrange::after {
 	background-color: hsl(34, 97%, 64%);
 }
 
-.col-blue::after {
+.colBlue::after {
 	background-color: hsl(212, 86%, 64%);
 }
 
 @media (min-width: 768px) {
-	.superGlassSet {
+	.boxSection {
 		display: flex;
 		align-items: center;
 	}
+
 	.col {
 		margin: 18px;
 	}
