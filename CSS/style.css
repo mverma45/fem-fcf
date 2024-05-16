@@ -100,9 +100,9 @@ p,
 
 .boxCards {
 	display: grid;
-	height: 250px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
 	gap: 1.87rem;
 	padding-top: 4rem;
 }
@@ -127,10 +127,21 @@ p,
 	grid-row: 1;
 }
 
-/* .attribution {
-	font-size: 0.7rem;
-	text-align: center;
+@media only screen and (max-width: 600px) {
+	.boxCards {
+		width: 100vw;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: center;
+	}
+
+	.attribution {
+		font-size: 0.7rem;
+		text-align: center;
+	}
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
 }
-.attribution a {
-	color: hsl(228, 45%, 44%);
-} */
